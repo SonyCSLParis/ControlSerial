@@ -1,5 +1,29 @@
 # Control Serial
 
+[![Python Version](https://img.shields.io/badge/python-3.7%2B-blue.svg)](https://www.python.org/downloads/)
+[![License: GPL-3.0](https://img.shields.io/badge/License-GPL%203.0-blue.svg)](LICENSE)
+[![DOI](https://img.shields.io/badge/DOI-pending%20Zenodo-orange.svg)](https://zenodo.org)
+[![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20Linux%20%7C%20macOS-lightgrey.svg)](https://github.com/Alienor134/UC2_Fluorescence_microscope)
+[![Arduino Compatible](https://img.shields.io/badge/Arduino-Compatible-00979D?logo=Arduino&logoColor=white)](https://www.arduino.cc/)
+
+
+
+---
+
+## Module Information
+
+**Intended Audience**: Researchers, engineers, and makers working on laboratory automation, microscopy, robotics, or hardware-software interfacing. This module is designed for users who need robust serial communication between Python and Arduino for instrument control, data acquisition, or interactive hardware systems.
+
+**Related Modules**:
+- [ControlCamera](../ControlCamera/) - Camera acquisition interface
+- [ControlLight](../ControlLight/) - LED and laser control
+- [ControlMotors](../ControlMotors/) - Motor and stage control
+- [Main Project Documentation](../docs/) - Complete microscope setup
+
+---
+
+## Overview
+
 If you have developed for the Arduino before, you most likely have used the [Serial](https://docs.arduino.cc/built-in-examples/basics/AnalogReadSerial) class to print messages and to send commands for your computer to the Arduino.
 
 The Serial link has some caveats, though, and  Romi Serial tries to address some of those. We  will go into detail further below. First, we show some examples on how to use it in your projects. We will show the classic "Blink" and  AnalogReadSerial" examples. In the first example
@@ -843,6 +867,135 @@ the table (CRC-8).
 
 Please check the code in the CRC8.h file.
 
+---
+
+## License and Legal Information
+
+### Software License
+
+This software is licensed under the **GNU General Public License v3.0 (GPL-3.0)**.
+
+```
+Copyright (C) 2019-2026 Sony Computer Science Laboratories
+Author: Peter Hanappe
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program. If not, see <https://www.gnu.org/licenses/>.
+```
+
+Full license text: [LICENSE](LICENSE)
+
+### Firmware License
+
+The Arduino firmware (RomiSerial library) included in this repository is also licensed under GPL-3.0.
+
+### Related Licenses
+
+- **Parent Project** (UC2 Fluorescence Microscope): Hardware under CERN-OHL-S-2.0, Software under GPL-3.0
+- **Documentation**: CC BY-SA 4.0
+
+See [../LICENSE](../LICENSE) for complete parent project licensing.
+
+---
+
+## Version Control and Attribution
+
+This project follows **Open Source Hardware Association (OSHWA)** guidelines for version control and attribution.
+
+### Version Control Practice
+
+- **Repository**: Git-based version control with full commit history
+- **Submodule Structure**: This module is part of the UC2 Fluorescence Microscope parent repository
+- **Versioning**: Semantic versioning (MAJOR.MINOR.PATCH)
+- **Releases**: Tagged releases with automated testing via GitHub Actions
+
+### Attribution Requirements
+
+When using or modifying this software:
+
+1. **Credit the original authors**: Peter Hanappe, Sony Computer Science Laboratories
+2. **Maintain license notices**: Keep GPL-3.0 headers in source files
+3. **Document modifications**: Clearly state any changes made
+4. **Share derivatives**: Derivatives must be released under GPL-3.0 or compatible license
+
+### Contributing
+
+Contributions are tracked through:
+- Git commit history (automatic attribution)
+- Pull requests on GitHub
+- Contributor acknowledgments in release notes
+
+See [../CONTRIBUTING.md](../CONTRIBUTING.md) for detailed contribution guidelines.
+
+---
+
+## Permanent Archival and Citation
+
+### Zenodo DOI
+
+**Current Status**: Pending first release  
+**Zenodo Record**: [To be added after first release]  
+**Concept DOI**: [Will point to all versions]  
+**Version DOI**: [Will point to specific release]
+
+This repository is configured for automatic archival on Zenodo upon each tagged release, providing permanent Digital Object Identifiers (DOIs) for citation in academic publications.
+
+### How to Cite
+
+TODO
 
 
+---
 
+## 🔗 Cross-References and Navigation
+
+### Within UC2 Fluorescence Microscope Project
+
+- **Main Repository**: [UC2_Fluorescence_microscope](https://github.com/Alienor134/UC2_Fluorescence_microscope)
+- **Hardware Documentation**: [../docs/build.md](../docs/build.md)
+- **Bill of Materials**: [../docs/bill_of_materials.md](../docs/bill_of_materials.md)
+- **Automation Guide**: [../docs/automate.md](../docs/automate.md)
+
+### Related Control Modules
+
+| Module | Purpose | Documentation |
+|--------|---------|---------------|
+| [ControlCamera](../ControlCamera/) | Camera acquisition and control | [README](../ControlCamera/README.md) |
+| [ControlLight](../ControlLight/) | Laser and LED control | [README](../ControlLight/README.md) |
+| [ControlMotors](../ControlMotors/) | XYZ stage and motor control | [README](../ControlMotors/README.md) |
+| **ControlSerial** | Arduino-Python communication | [README](README.md) (this file) |
+| [Altar](../Altar/) | Data management and visualization | [README](../Altar/README.md) |
+
+
+### Examples and Tutorials
+
+- **Blink Example**: [examples/RomiSerial_Simple/](examples/RomiSerial_Simple/)
+- **Advanced Usage**: [examples/RomiSerial_MoreElaborate/](examples/RomiSerial_MoreElaborate/)
+- **Documentation Examples**: [docs/blink.py](docs/blink.py), [docs/analogread.py](docs/analogread.py)
+
+### External Resources
+
+- **UC2 Platform**: https://openuc2.com
+- **Main UC2 Repository**: https://github.com/openUC2/UC2-GIT
+- **Arduino Documentation**: https://www.arduino.cc/reference/en/
+- **Serial Communication**: https://docs.arduino.cc/built-in-examples/
+
+---
+
+<div align="center">
+
+**ControlSerial** is open-source software for open science.
+
+[⬆ Back to top](#control-serial)
+
+</div>
