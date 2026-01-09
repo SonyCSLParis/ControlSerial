@@ -1,21 +1,18 @@
 from setuptools import setup, find_packages
+from pathlib import Path
 
 
-install_requires = [
-    'pyserial',
-    'argparse',
-    'crc8'
-]
+def parse_requirements(filename):
+    """Load requirements from a pip requirements file."""
+    lineiter = (line.strip() for line in Path(filename).read_text().splitlines())
+    return [line for line in lineiter if line and not line.startswith("#") and not line.startswith("-r")]
 
-tests_require = [
-    'pytest>=6.0',
-    'pytest-cov>=2.0',
-    'coverage>=5.0'
-]
+
+install_requires = parse_requirements('requirements.txt')
+dev_requires = parse_requirements('requirements-dev.txt')
 
 extras_require = {
-    'test': tests_require,
-    'dev': tests_require + ['black', 'flake8', 'mypy']
+    'dev': dev_requires,
 }
 
 
@@ -26,7 +23,6 @@ author="Peter Hanappe",
 author_email="peter@hanappe.com",
 packages = find_packages(),
 install_requires = install_requires,
-tests_require = tests_require,
 extras_require = extras_require,
 license="GPLv3",
 python_requires='>=3.6',

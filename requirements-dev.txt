@@ -1,0 +1,21 @@
+# ControlSerial Development and Testing Dependencies
+# Install with: pip install -r requirements-dev.txt
+
+# Runtime dependencies
+-r requirements.txt
+
+# Testing frameworks
+pytest>=6.0.0
+pytest-cov>=2.10.0
+coverage>=5.0
+
+# Code quality and formatting
+black>=21.0
+flake8>=3.9.0
+isort>=5.0.0
+mypy>=0.910
+
+# Build tools
+build>=0.7.0
+twine>=3.4.0
+wheel>=0.36.0

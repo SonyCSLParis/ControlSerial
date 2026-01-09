@@ -1,0 +1,6 @@
+# ControlSerial Runtime Dependencies
+pyserial>=3.4
+crc8>=0.1.0
+
+# Python 2/3 compatibility (argparse is built-in for Python 3+)
+argparse; python_version < '3.2'
