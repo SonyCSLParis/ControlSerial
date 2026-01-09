@@ -24,14 +24,14 @@ import os
 import time
 
 # Add parent directory to path for imports
-sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..'))
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), ".."))
 
 from ControlSerial.ControlSerial import ControlSerial, EnvelopeEncoder, EnvelopeDecoder
 
 
 class TestControlSerialMocked(unittest.TestCase):
     """Test ControlSerial class with mocked serial connection"""
-    
+	
     @patch('ControlSerial.ControlSerial.serial.Serial')
     @patch('ControlSerial.ControlSerial.time.sleep')
     def setUp(self, mock_sleep, mock_serial):
@@ -211,7 +211,7 @@ class TestControlSerialMocked(unittest.TestCase):
 
 class TestControlSerialIntegration(unittest.TestCase):
     """Integration tests for ControlSerial with realistic scenarios"""
-    
+	
     @patch('ControlSerial.ControlSerial.serial.Serial')
     @patch('ControlSerial.ControlSerial.time.sleep')
     def setUp(self, mock_sleep, mock_serial):
@@ -285,7 +285,7 @@ class TestControlSerialIntegration(unittest.TestCase):
 
 class TestControlSerialErrorHandling(unittest.TestCase):
     """Test error handling and edge cases"""
-    
+	
     @patch('ControlSerial.ControlSerial.serial.Serial')
     @patch('ControlSerial.ControlSerial.time.sleep')
     def setUp(self, mock_sleep, mock_serial):
