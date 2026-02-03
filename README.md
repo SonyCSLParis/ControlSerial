@@ -18,7 +18,7 @@
 - [ControlCamera](../ControlCamera/) - Camera acquisition interface
 - [ControlLight](../ControlLight/) - LED and laser control
 - [ControlMotors](../ControlMotors/) - Motor and stage control
-- [Main Project Documentation](../docs/) - Complete microscope setup
+- [Main Project Documentation](https://alienor134.github.io/UC2_Fluorescence_microscope/docs/) - Complete microscope setup
 
 ---
 
@@ -962,9 +962,9 @@ TODO
 ### Within UC2 Fluorescence Microscope Project
 
 - **Main Repository**: [UC2_Fluorescence_microscope](https://github.com/Alienor134/UC2_Fluorescence_microscope)
-- **Hardware Documentation**: [../docs/build.md](../docs/build.md)
-- **Bill of Materials**: [../docs/bill_of_materials.md](../docs/bill_of_materials.md)
-- **Automation Guide**: [../docs/automate.md](../docs/automate.md)
+- **Hardware Documentation**: [../docs/build.md](https://alienor134.github.io/UC2_Fluorescence_microscope/docs/build.md)
+- **Bill of Materials**: [../docs/bill_of_materials.md](https://alienor134.github.io/UC2_Fluorescence_microscope/docs/bill_of_materials.md)
+- **Automation Guide**: [../docs/automate.md](https://alienor134.github.io/UC2_Fluorescence_microscope/docs/automate.md)
 
 ### Related Control Modules
 
@@ -972,9 +972,9 @@ TODO
 |--------|---------|---------------|
 | [ControlCamera](../ControlCamera/) | Camera acquisition and control | [README](../ControlCamera/README.md) |
 | [ControlLight](../ControlLight/) | Laser and LED control | [README](../ControlLight/README.md) |
-| [ControlMotors](../ControlMotors/) | XYZ stage and motor control | [README](../ControlMotors/README.md) |
+| [ControlMotors](../ControlMotors) | XYZ stage and motor control | [README](../ControlMotors/README.md) |
 | **ControlSerial** | Arduino-Python communication | [README](README.md) (this file) |
-| [Altar](../Altar/) | Data management and visualization | [README](../Altar/README.md) |
+| [Altar](https://github.com/DreamRepo/Altar) | Data management and visualization | [Documentation](https://dreamrepo.github.io/Altar/) |
 
 
 ### Examples and Tutorials
