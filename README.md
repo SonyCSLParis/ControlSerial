@@ -12,13 +12,7 @@
 
 ## Module Information
 
-**Intended Audience**: Researchers, engineers, and makers working on laboratory automation, microscopy, robotics, or hardware-software interfacing. This module is designed for users who need robust serial communication between Python and Arduino for instrument control, data acquisition, or interactive hardware systems.
-
-**Related Modules**:
-- [ControlCamera](../ControlCamera/) - Camera acquisition interface
-- [ControlLight](../ControlLight/) - LED and laser control
-- [ControlMotors](../ControlMotors/) - Motor and stage control
-- [Main Project Documentation](https://alienor134.github.io/UC2_Fluorescence_microscope/docs/) - Complete microscope setup
+**Intended Audience**: Developers and researchers building reliable computer–Arduino communication for instrument control, data acquisition, or interactive hardware. Focused on the RomiSerial protocol with synchronous request–response, message framing, CRC-8 integrity, and explicit error handling in Python and C++.
 
 ---
 
@@ -27,7 +21,7 @@
 If you have developed for the Arduino before, you most likely have used the [Serial](https://docs.arduino.cc/built-in-examples/basics/AnalogReadSerial) class to print messages and to send commands for your computer to the Arduino.
 
 The Serial link has some caveats, though, and  Romi Serial tries to address some of those. We  will go into detail further below. First, we show some examples on how to use it in your projects. We will show the classic "Blink" and  AnalogReadSerial" examples. In the first example
-we will control the LED from Python and C++. In the second example, we will se how to get data off the Arduino, in Python and C++.
+we will control the LED from Python and C++. In the second example, we will see how to get data off the Arduino, in Python and C++.
 
 You can find the original code for Blink and AnalogReadSerial [online](https://docs.arduino.cc/built-in-examples) and also in the Arduino IDE in the menu `File` > `Examples` > `01.Basics`.
 
@@ -36,15 +30,15 @@ You can find the original code for Blink and AnalogReadSerial [online](https://d
 ## Install the library
 
 ```
-git clone https://github.com/SonyCSLParis/CSL-Serial.git
+git clone https://github.com/SonyCSLParis/ControlSerial.git
 cd ControlSerial
-python setup.py develop
+pip install -e .
 ```
 
 1. Install [Arduino IDE](https://www.arduino.cc/en/software)
 2. If you have never used an Arduino you can start with the [tutorial](https://www.arduino.cc/en/Guide/ArduinoUno).
 3. Find the location where Arduino fetches libraries (usually "Documents/Arduino/libraries on Windows"). Add "libraries" folder if it doesn't exist. 
-4. In this location, copy the [RomiSerial](https://github.com/SonyCSLParis/CSL-Serial/tree/main) folder of the repository. 
+4. In this location, copy the [RomiSerial](https://github.com/SonyCSLParis/ControlSerial/tree/main) folder of the repository. 
 
 
 ![im](Images/2023-04-07-18-32-25.png)
@@ -904,7 +898,6 @@ The Arduino firmware (RomiSerial library) included in this repository is also li
 - **Parent Project** (UC2 Fluorescence Microscope): Hardware under CERN-OHL-S-2.0, Software under GPL-3.0
 - **Documentation**: CC BY-SA 4.0
 
-See [../LICENSE](../LICENSE) for complete parent project licensing.
 
 ---
 
@@ -935,36 +928,19 @@ Contributions are tracked through:
 - Pull requests on GitHub
 - Contributor acknowledgments in release notes
 
-See [../CONTRIBUTING.md](../CONTRIBUTING.md) for detailed contribution guidelines.
 
 ---
 
-## Permanent Archival and Citation
-
-### Zenodo DOI
-
-**Current Status**: Pending first release  
-**Zenodo Record**: [To be added after first release]  
-**Concept DOI**: [Will point to all versions]  
-**Version DOI**: [Will point to specific release]
-
-This repository is configured for automatic archival on Zenodo upon each tagged release, providing permanent Digital Object Identifiers (DOIs) for citation in academic publications.
-
-### How to Cite
-
-TODO
-
-
----
-
-## 🔗 Cross-References and Navigation
+## Cross-References and Navigation
 
 ### Within UC2 Fluorescence Microscope Project
 
 - **Main Repository**: [UC2_Fluorescence_microscope](https://github.com/Alienor134/UC2_Fluorescence_microscope)
-- **Hardware Documentation**: [../docs/build.md](https://alienor134.github.io/UC2_Fluorescence_microscope/docs/build.md)
-- **Bill of Materials**: [../docs/bill_of_materials.md](https://alienor134.github.io/UC2_Fluorescence_microscope/docs/bill_of_materials.md)
-- **Automation Guide**: [../docs/automate.md](https://alienor134.github.io/UC2_Fluorescence_microscope/docs/automate.md)
+- **Documentation Home**: https://alienor134.github.io/UC2_Fluorescence_microscope/docs/
+- **Build Instructions**: https://alienor134.github.io/UC2_Fluorescence_microscope/docs/build
+- **Bill of Materials**: https://alienor134.github.io/UC2_Fluorescence_microscope/docs/bill_of_materials
+- **Automation Guide**: https://alienor134.github.io/UC2_Fluorescence_microscope/docs/automate
+- **Examples**: https://alienor134.github.io/UC2_Fluorescence_microscope/docs/example
 
 ### Related Control Modules
 
